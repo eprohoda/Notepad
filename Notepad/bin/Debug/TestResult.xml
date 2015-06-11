@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\AHI_repo\Automation\Notepad\Notepad\bin\Debug\Notepad.dll" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-04-28" time="15:52:21">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="D:\AHI_repo\Automation\Notepad\Notepad\bin\Debug" machine-name="EPROHODA-PC" user="eprohoda" user-domain="MIRANTIS" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="D:\AHI_repo\Automation\Notepad\Notepad\bin\Debug\Notepad.dll" executed="True" result="Failure" success="False" time="5.461" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Notepad" executed="True" result="Failure" success="False" time="5.455" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="Notepad2Feature" description="Notepad2" executed="True" result="Failure" success="False" time="5.455" asserts="0">
+            <results>
+              <test-case name="Notepad.Notepad2Feature.SeeButtonsInTheNotepad" description="See buttons in the Notepad" executed="True" result="Failure" success="False" time="5.262" asserts="2">
+                <categories>
+                  <category name="mytag" />
+                </categories>
+                <failure>
+                  <message><![CDATA[  Expected: "B1"
+  But was:  <OpenQA.Selenium.Remote.RemoteWebElement>
+]]></message>
+                  <stack-trace><![CDATA[at Notepad.Notepad1Steps.ThenISeeButtonNew() in d:\AHI_repo\Automation\Notepad\Notepad\Notepad1Steps.cs:line 49
+at lambda_method(Closure , IContextManager )
+at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+at Notepad.Notepad2Feature.ScenarioCleanup() in d:\AHI_repo\Automation\Notepad\Notepad\Notepad_test2.feature.cs:line 0
+at Notepad.Notepad2Feature.SeeButtonsInTheNotepad() in d:\AHI_repo\Automation\Notepad\Notepad\Notepad_test2.feature:line 8
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

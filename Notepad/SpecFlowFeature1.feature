@@ -6,7 +6,8 @@
 Scenario: ClickingNewButton
 	Given Notepad window is opened
 	When I enter text in Notepad
-	And I wait some time
 	And I click Undo button
 	And I wait some time
 	And I click Redo button
+	And I close browser
+

@@ -70,10 +70,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SpecFlowFeature1.feature</DependentUpon>
     </Compile>
-    <Compile Include="tmp.feature.cs">
+    <Compile Include="Feature3.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>tmp.feature</DependentUpon>
+      <DependentUpon>Feature3.feature</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -91,9 +91,9 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SpecFlowFeature1.feature.cs</LastGenOutput>
     </None>
-    <None Include="tmp.feature">
+    <None Include="Feature3.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>tmp.feature.cs</LastGenOutput>
+      <LastGenOutput>Feature3.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

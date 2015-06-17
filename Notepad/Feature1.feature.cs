@@ -65,22 +65,22 @@ namespace Notepad
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("See buttons in the Notepad")]
+        [NUnit.Framework.DescriptionAttribute("Feature1_See buttons in the Notepad")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void SeeButtonsInTheNotepad()
+        public virtual void Feature1_SeeButtonsInTheNotepad()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("See buttons in the Notepad", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Feature1_See buttons in the Notepad", new string[] {
                         "mytag"});
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
  testRunner.Given("Notepad window is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
- testRunner.Then("I see button New", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I see \"New\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 9
- testRunner.And("I see button Open", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I see \"Open\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
- testRunner.And("I see button Save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I see \"Save\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 11
  testRunner.When("I close browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden

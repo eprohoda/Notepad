@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using System.Xml.Linq;
 using TechTalk.SpecFlow;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -29,107 +30,66 @@ namespace Notepad
 			Thread.Sleep(2000);
         }
         
-        [When(@"I enter text in Notepad")]
-        public void WhenIEnterTextInNotepad()
+        [When(@"I enter ""(.*)"" text")]
+        public void WhenIEnterTextInNotepad(string text)
         {
 			IWebElement query = driver.FindElement(By.Id("area"));
-			query.SendKeys("text123");
-	        //Thread.Sleep(5000);
-	        
-
+			query.SendKeys(text);
         }
 
-		[When(@"I click Save button")]
-		public void WhenIClickSaveButton()
-		{
-			IWebElement savebutton = driver.FindElement(By.Name("B3"));
-			savebutton.Click();
-			Thread.Sleep(5000);
-		}
-
-
-		[Then(@"I see Filename field")]
-		public void ThenISeeFilenameField()
-		{
-			//IWebElement savefield = driver.FindElement(By.Id("filename"));
-		}
-
 		
+		[When(@"I click ""(.*)"" button")]
+		public void WhenIClickButton(string p0)
+		{
+			string p1="";
+			if (p0 == "New") {p1 = "B1";}
+			if (p0 == "Open") { p1 = "B2"; }
+			if (p0 == "Save") { p1 = "B3"; }
+			if (p0 == "Cut") { p1 = "B4"; }
+			if (p0 == "Copy") { p1 = "B5"; }
+			if (p0 == "Paste") { p1 = "B6"; }
+			IWebElement button = driver.FindElement(By.Name(p1));
+			button.Click();
+		}
+
 		[When(@"I enter File Name")]
 		public void WhenIEnterFileName()
 		{
 			IWebElement savefield = driver.FindElement(By.Id("filename"));
 			savefield.Click();
-			savefield.SendKeys("text");
+			savefield.SendKeys("FileName1");
+			driver.FindElement(By.Id("save")).Click();
 		}
 
-
-		[When(@"I click Save button to save File")]
-		public void WhenIClickSaveButtonToSaveFile()
+	    
+		[Then(@"I see ""(.*)"" button")]
+		public void ThenISeeButton(string p0)
 		{
-			IWebElement savebutton = driver.FindElement(By.Id("save"));
-			savebutton.Click();
-
+			string p1 = "";
+			if (p0 == "New") { p1 = "B1"; }
+			if (p0 == "Open") { p1 = "B2"; }
+			if (p0 == "Save") { p1 = "B3"; }
+			if (p0 == "Cut") { p1 = "B4"; }
+			if (p0 == "Copy") { p1 = "B5"; }
+			if (p0 == "Paste") { p1 = "B6"; }
+			driver.FindElement(By.Name(p1));
 		}
-
-		[When(@"I wait some time")]
-		public void WhenIWaitSomeTime()
+ 
+	
+		[When(@"I wait ""(.*)"" msec")]
+		public void WhenIWaitSomeTime(int msec)
 		{
-			//driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.(1));
-			Thread.Sleep(5000);
+			Thread.Sleep(msec);
 		}
 
 
 		[When(@"I close browser")]
-	    public void WhenICloseBrowser()
-	    {
-		    driver.Close();
-	    }
-
-
-
-	    ///// Test2 definitions //////
-
-	    [Then(@"I see button New")]
-	    public void ThenISeeButtonNew()
-	    {
-		    driver.FindElement(By.Name("B1"));
-	    }
-
-	    [Then(@"I see button Open")]
-		public void ThenISeeButtonOpen()
+		public void WhenICloseBrowser()
 		{
-			driver.FindElement(By.Name("B2"));
-		}
-
-		[Then(@"I see button Save")]
-		public void ThenISeeButtonSave()
-		{
-			driver.FindElement(By.Name("B3"));
+			driver.Close();
 		}
 
 
-		[When(@"I click New button")]
-		public void WhenIClickNewButton()
-		{
-			IWebElement newbutton = driver.FindElement(By.Name("B1"));
-			newbutton.Click();
-		}
-
-		[When(@"I click Undo button")]
-		public void WhenIClickUndoButton()
-		{
-			IWebElement undobutton = driver.FindElement(By.Name("B7"));
-			undobutton.Click();
-		}
-
-		[When(@"I click Redo button")]
-		public void WhenIClickRedoButton()
-		{
-			IWebElement redobutton = driver.FindElement(By.Name("B8"));
-			redobutton.Click();
-		}
-
-
+		public string Null { get; set; }
 	}
 }

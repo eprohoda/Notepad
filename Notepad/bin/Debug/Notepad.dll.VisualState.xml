@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1006]D:\AHI_repo\Automation\Notepad\Notepad\bin\Debug\Notepad.dll</TopNode>
-  <SelectedNode>[0-1006]D:\AHI_repo\Automation\Notepad\Notepad\bin\Debug\Notepad.dll</SelectedNode>
+  <TopNode>[0-1008]D:\AHI_repo\Automation\Notepad\Notepad\bin\Debug\Notepad.dll</TopNode>
+  <SelectedNode>[0-1008]D:\AHI_repo\Automation\Notepad\Notepad\bin\Debug\Notepad.dll</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1006]D:\AHI_repo\Automation\Notepad\Notepad\bin\Debug\Notepad.dll" Expanded="true" />
-    <Node UniqueName="[0-1007]Notepad" Expanded="true" />
+    <Node UniqueName="[0-1008]D:\AHI_repo\Automation\Notepad\Notepad\bin\Debug\Notepad.dll" Expanded="true" />
+    <Node UniqueName="[0-1009]Notepad" Expanded="true" />
     <Node UniqueName="[0-1000]Notepad.Feature1Feature" Expanded="true" />
     <Node UniqueName="[0-1002]Notepad.Notepad1Feature" Expanded="true" />
-    <Node UniqueName="[0-1004]Notepad.TmpFeature" Expanded="true" />
+    <Node UniqueName="[0-1004]Notepad.SpecFlowFeature1Feature" Expanded="true" />
+    <Node UniqueName="[0-1006]Notepad.TmpFeature" Expanded="true" />
   </Nodes>
 </VisualState>

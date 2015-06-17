@@ -4,13 +4,11 @@
 	I see text in Notepad
 
 @mytag
-Scenario: Write text in Notepad
+Scenario: Feature2_Write text in Notepad
  Given Notepad window is opened
- When I enter text in Notepad
- And I click Save button
- Then I see Filename field 
- When I enter File Name
- And I click Save button to save File
- And I wait some time
+ When I enter "test text" text
+ And I click "Save" button
+ And I enter File Name
+ And I wait "3000" msec
  And I close browser
  #Then I see entered text Notepad

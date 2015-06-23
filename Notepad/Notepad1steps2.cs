@@ -19,8 +19,8 @@ namespace Notepad
 	[Binding]
     public class Notepad1steps
     {
-		//IWebDriver driver = new ChromeDriver();
-		IWebDriver driver = new InternetExplorerDriver(@"d:\AHI_repo\Automation\IE driver\32\");
+		IWebDriver driver = new ChromeDriver();
+		//IWebDriver driver = new InternetExplorerDriver(@"d:\AHI_repo\Automation\IE driver\32\");
 
         
 		[Given(@"Notepad window is opened")]

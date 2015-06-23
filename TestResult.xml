@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="d:\AHI_repo\Jenkins_workspace\Notepad\bin\Debug\Notepad.dll" total="4" errors="4" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-06-23" time="15:33:05">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="d:\AHI_repo\Automation\Notepad" machine-name="EPROHODA-PC" user="SYSTEM" user-domain="MIRANTIS" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="d:\AHI_repo\Jenkins_workspace\Notepad\bin\Debug\Notepad.dll" executed="True" result="Failure" success="False" time="489.660" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Notepad" executed="True" result="Failure" success="False" time="489.655" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="Feature1Feature" description="Feature1" executed="True" result="Failure" success="False" time="125.278" asserts="0">
+            <results>
+              <test-case name="Notepad.Feature1Feature.Feature1_SeeButtonsInTheNotepad" description="Feature1_See buttons in the Notepad" executed="True" result="Error" success="False" time="125.079" asserts="0">
+                <categories>
+                  <category name="mytag" />
+                </categories>
+                <failure>
+                  <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:2438/session/46dff5f2868486929c0bcd277a23a4e5/title timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+                  <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.get_Title()
+at Notepad.Notepad1steps.GivenNotepadWindowIsOpened() in d:\AHI_repo\Automation\Notepad\Notepad\Notepad1steps2.cs:line 29
+at lambda_method(Closure , IContextManager )
+at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+at Notepad.Feature1Feature.ScenarioCleanup() in d:\AHI_repo\Automation\Notepad\Notepad\Feature1.feature.cs:line 0
+at Notepad.Feature1Feature.Feature1_SeeButtonsInTheNotepad() in d:\AHI_repo\Automation\Notepad\Notepad\Feature1.feature:line 11
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Notepad1Feature" description="Notepad1" executed="True" result="Failure" success="False" time="121.349" asserts="0">
+            <results>
+              <test-case name="Notepad.Notepad1Feature.Feature2_WriteTextInNotepad" description="Feature2_Write text in Notepad" executed="True" result="Error" success="False" time="121.347" asserts="0">
+                <categories>
+                  <category name="mytag" />
+                </categories>
+                <failure>
+                  <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:2639/session/a28a7f7eafb749a0d33b2c1419712457/title timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+                  <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.get_Title()
+at Notepad.Notepad1steps.GivenNotepadWindowIsOpened() in d:\AHI_repo\Automation\Notepad\Notepad\Notepad1steps2.cs:line 29
+at lambda_method(Closure , IContextManager )
+at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+at Notepad.Notepad1Feature.ScenarioCleanup() in d:\AHI_repo\Automation\Notepad\Notepad\Feature2.feature.cs:line 0
+at Notepad.Notepad1Feature.Feature2_WriteTextInNotepad() in d:\AHI_repo\Automation\Notepad\Notepad\Feature2.feature:line 13
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="SpecFlowFeature1Feature" description="SpecFlowFeature1" executed="True" result="Failure" success="False" time="121.672" asserts="0">
+            <results>
+              <test-case name="Notepad.SpecFlowFeature1Feature.ClickingNewButton" description="ClickingNewButton" executed="True" result="Error" success="False" time="121.671" asserts="0">
+                <failure>
+                  <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:2762/session/2d2f06d47f280139713b0acf7db98985/title timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+                  <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.get_Title()
+at Notepad.Notepad1steps.GivenNotepadWindowIsOpened() in d:\AHI_repo\Automation\Notepad\Notepad\Notepad1steps2.cs:line 29
+at lambda_method(Closure , IContextManager )
+at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+at Notepad.SpecFlowFeature1Feature.ScenarioCleanup() in d:\AHI_repo\Automation\Notepad\Notepad\SpecFlowFeature1.feature.cs:line 0
+at Notepad.SpecFlowFeature1Feature.ClickingNewButton() in d:\AHI_repo\Automation\Notepad\Notepad\SpecFlowFeature1.feature:line 13
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="TmpFeature" description="tmp" executed="True" result="Failure" success="False" time="121.342" asserts="0">
+            <results>
+              <test-case name="Notepad.TmpFeature.Feature3_Tmp" description="Feature3_tmp" executed="True" result="Error" success="False" time="121.341" asserts="0">
+                <failure>
+                  <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:2810/session/ae3aef1efdd1c4fce3feb2227762f05c/title timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+                  <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.get_Title()
+at Notepad.Notepad1steps.GivenNotepadWindowIsOpened() in d:\AHI_repo\Automation\Notepad\Notepad\Notepad1steps2.cs:line 29
+at lambda_method(Closure , IContextManager )
+at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+at Notepad.TmpFeature.ScenarioCleanup() in d:\AHI_repo\Automation\Notepad\Notepad\Feature3.feature.cs:line 0
+at Notepad.TmpFeature.Feature3_Tmp() in d:\AHI_repo\Automation\Notepad\Notepad\Feature3.feature:line 10
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
